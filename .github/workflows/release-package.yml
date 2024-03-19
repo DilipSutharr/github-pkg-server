@@ -12,8 +12,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Setup node
+        uses: actions/setup-node@v3
         with:
-          node-version: 20.11.0
+          node-version: 20
+          registry-url: https://npm.pkg.github.com
 
       - name: Install dependencies
         run: npm install
@@ -23,7 +27,7 @@ jobs:
 
       - name: Publish package
         run: |
-          npm publish --registry=https://npm.pkg.github.com
+          npm publish
 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.TOKEN_PKG }}
