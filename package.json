@@ -1,8 +1,10 @@
 {
   "name": "github-pkg-server",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.0.1",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com" 
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
