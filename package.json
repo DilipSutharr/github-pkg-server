@@ -1,5 +1,5 @@
 {
-  "name": "github-pkg-server",
+  "name": "@dilipsutharr/github-pkg-server",
   "version": "0.0.1",
   "publishConfig": { 
     "registry": "https://npm.pkg.github.com" 
