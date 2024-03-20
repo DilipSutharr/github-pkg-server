@@ -2,7 +2,7 @@
   "name": "@dilipsutharr/github-pkg-server",
   "version": "0.0.4",
   "publishConfig": { 
-    "@dilipsutharr:registry": "https://npm.pkg.github.com" 
+    "registry": "https://npm.pkg.github.com" 
   },
   "scripts": {
     "dev": "vite",
